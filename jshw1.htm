@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <div class="main">
+
+            <div class="form">
+                <input type="text" id="left"/>
+            </div>
+
+            <div class="form">
+                <input type="text" id="right"/>
+            </div>
+
+            <input type="button" class="button" value="Swap" onClick="switchText()">
+
+        </div>
+
+        
+
+        <script>
+
+            function switchText() {
+                var obj1 = document.getElementById('left').value;
+                var obj2 = document.getElementById('right').value;
+
+                var temp = obj1;
+                obj1 = obj2;
+                obj2 = temp;                                              
+            
+                document.getElementById('left').value = obj1;
+                document.getElementById('right').value = obj2;
+            }
+
+        </script>
+
+    </body>
+
+</html>
